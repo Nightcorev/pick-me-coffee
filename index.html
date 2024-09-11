@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+
   </head>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -58,55 +60,57 @@
 		  </div>
 	  </nav>
     <!-- END nav -->
+	<div>
+		<section class="home-slider owl-carousel">
+			<div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+				<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+				<div class="col-md-8 col-sm-12 text-center ftco-animate">
+					<h1 class="mb-4">Wellcome to Pick me Coffee</h1>
+					<p class="mb-4 mb-md-5">Coffee and Eatery</p>
+					<p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Chat we</a> <a href="#scrollTarget" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">See More</a></p>
+				</div>
 
-            <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <h1 class="mb-4">Wellcome to Pick me Coffee</h1>
-              <p class="mb-4 mb-md-5">Coffee and Eatery</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Chat we</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
-            </div>
+				</div>
+			</div>
+			</div>
 
-          </div>
-        </div>
-      </div>
+			<div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+				<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-      <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+				<div class="col-md-8 col-sm-12 text-center ftco-animate">
+					<h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
+					<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#scrollTarget" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">See More</a></p>
+				</div>
 
-            <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
-            </div>
+				</div>
+			</div>
+			</div>
 
-          </div>
-        </div>
-      </div>
+			<div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+				<div class="overlay"></div>
+			<div class="container">
+				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
-      <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
-      	<div class="overlay"></div>
-        <div class="container">
-          <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+				<div class="col-md-8 col-sm-12 text-center ftco-animate">
+					<h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
+					<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+					<p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#scrollTarget" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">See More</a></p>
+				</div>
 
-            <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
-            </div>
+				</div>
+			</div>
+			</div>
+		</section>
+	</div>  
+    
 
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-intro">
+    <section class="ftco-intro" id="scrollTarget">
     	<div class="container-wrap">
     		<div class="wrap d-md-flex align-items-xl-end">
 	    		<div class="info">
@@ -134,10 +138,9 @@
 	    				</div>
 	    			</div>
 	    		</div>
-				<div class="book p-4">
+				<div class="book p-4 ">
 					<div class="d-flex">
-						<img src="images/contentimage.jpg" class="rounded-circle" alt="" style="width: 45%;">
-						<p style="color: white; font-family:Verdana, Geneva, Tahoma, sans-serif">Saya m</p>
+						<div id="map"></div>
 					</div>
 				</div>
     		</div>
@@ -561,8 +564,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-
   <script src="js/jquery.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -582,3 +585,17 @@
     
   </body>
 </html>
+
+<script>
+	var map = L.map('map').setView([-6.3119926, 107.3218387], 17);
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+	
+	L.marker([-6.3119926, 107.3218387]).addTo(map)
+		.bindPopup('Pick Me Coffee<br> A great place for coffee!')
+		.openPopup();
+	
+
+</script>
